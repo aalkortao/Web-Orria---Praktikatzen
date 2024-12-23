@@ -8,7 +8,14 @@ const app = express();
 const port = 3000;
 
 // MongoDB konexioa
-mongoose.connect('mongodb://localhost/kirol_elkartea', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/kirol_elkartea', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('MongoDB konektatua');
+  })
+  .catch((err) => {
+    console.error('MongoDB konexio errorea:', err);
+    process.exit(1);  // Aplikazioa itxi errore bat dagoenean
+  });
 
 // Ihardunaldi eredua
 const EventSchema = new mongoose.Schema({
