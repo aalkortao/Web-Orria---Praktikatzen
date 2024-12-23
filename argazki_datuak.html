@@ -1,0 +1,42 @@
+<section id="teams">
+    <h2>Taldeak</h2>
+    <div class="team" id="team1">
+        <h3>Talde 1</h3>
+        <div class="member">
+            <img src="path/to/photo1.jpg" alt="Izena 1">
+            <p>Izena 1</p>
+        </div>
+        <div class="member">
+            <img src="path/to/photo2.jpg" alt="Izena 2">
+            <p>Izena 2</p>
+        </div>
+        <!-- Beste kideak hemen sartuko lirateke -->
+    </div>
+    <!-- Beste taldeak hemen sartuko lirateke -->
+</section>
+
+<style>
+#teams {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.member {
+    margin: 10px;
+    text-align: center;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+</style>
