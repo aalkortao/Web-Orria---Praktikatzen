@@ -1,0 +1,46 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 2em;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team .member {
+    margin: 10px;
+    text-align: center;
+}
+
+.team .member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
